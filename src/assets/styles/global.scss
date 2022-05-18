@@ -9,9 +9,11 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,6 +31,22 @@ h2{
 
 h3{
     @include subheadline;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .circle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 9rem;
+        height: 9rem;
+        background: $white;
+        border-radius: 50%;
+    }
 }
 
 #app {

@@ -22,6 +22,9 @@ MIXINS
  */
 
 @mixin big-headline {
+    @media only screen and (max-width: $md){
+        font-size : 5rem;
+    }
     font-family: $font-title;
     font-size : 6.5rem;
 }
@@ -47,3 +50,9 @@ MIXINS
     font-size : 1.8rem;
 }
 
+
+/**
+RESPONSIVE
+ */
+
+$md: 1000px;
