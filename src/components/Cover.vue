@@ -56,6 +56,7 @@ export default {
     width: 40vw;
     .cta {
       @media only screen and (max-width: $md) {
+        margin-top: 2rem;
         position: relative;
       }
       position: absolute;

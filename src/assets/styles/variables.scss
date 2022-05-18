@@ -23,7 +23,7 @@ MIXINS
 
 @mixin big-headline {
     @media only screen and (max-width: $md){
-        font-size : 5rem;
+        font-size : 4.5rem;
     }
     font-family: $font-title;
     font-size : 6.5rem;
