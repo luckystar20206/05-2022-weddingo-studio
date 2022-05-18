@@ -1,0 +1,49 @@
+/**
+FONTS
+ */
+
+
+$font-title : 'Allenoire', 'Serif';
+$font-body : 'Agrandir', 'Helvetica';
+
+
+/**
+COLORS
+ */
+
+$body : #110E25;
+$blue : #4033A3;
+$pink : #FFD2C4;
+$white : #FFFFFF;
+
+
+/**
+MIXINS
+ */
+
+@mixin big-headline {
+    font-family: $font-title;
+    font-size : 6.5rem;
+}
+
+@mixin headline {
+    font-family: $font-title;
+    font-size : 3rem;
+}
+
+@mixin subheadline {
+    font-family: $font-body;
+    font-size : 3.5rem;
+    font-variation-settings: 'wght' 500;
+}
+
+@mixin text {
+    font-family: $font-body;
+    font-size : 2rem;
+}
+
+@mixin title {
+    font-family: $font-body;
+    font-size : 1.8rem;
+}
+
