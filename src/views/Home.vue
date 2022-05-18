@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Cover></Cover>
+    <Quote></Quote>
   </div>
 </template>
 
@@ -10,14 +11,13 @@
 </style>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
  import Cover from '@/components/Cover.vue'
+ import Quote from '@/components/Quote.vue'
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld
+    Quote,
     Cover
   }
 }

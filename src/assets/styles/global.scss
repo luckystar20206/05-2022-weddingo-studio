@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: $body;
+    color: $body ;
     @include text;
 }
 
@@ -34,23 +34,29 @@ h3 {
 }
 
 .cta {
+    &:hover{
+        cursor: pointer;
+        path{
+            transform: rotate(30deg);
+        }
+
+        .circle {
+            transform: scale(0.9);
+        }
+    }
+
     @media only screen and (max-width: $md) {
         transform: scale(0.8);
     }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    path{
+        transform-origin: center center;
+        transition: transform .3s ease-out;
+    }
 
     .circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -51%);
-        width: 9rem;
-        height: 9rem;
-        background: $white;
-        border-radius: 50%;
+        transform-origin: center center;
+        transition: transform .3s ease-out;
     }
 }
 

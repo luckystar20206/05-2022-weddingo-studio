@@ -55,6 +55,10 @@
 
 
 .menu {
+  @media only screen and (max-width: $md){
+    top: 3rem;
+    width: 90%;
+  }
   position: fixed;
   z-index: 9999;
   top: 5rem;
